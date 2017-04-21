@@ -1,0 +1,587 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/offirgolan/ember-cp-validations"
+
+    >ember-cp-validations (v3.3.0)</a>
+</h1>
+<h4>Ember computed property based validation library</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cp-validations">module ember-cp-validations</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.setupPreprocessorRegistry">
+            function <span class="apidocSignatureSpan">ember-cp-validations.</span>setupPreprocessorRegistry
+            <span class="apidocSignatureSpan">(type, registry)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get">
+            function <span class="apidocSignatureSpan">ember-cp-validations.</span>v_get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cp-validations.</span>index</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cp-validations.</span>v_get.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cp-validations.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cp-validations.index">module ember-cp-validations.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.index.setupPreprocessorRegistry">
+            function <span class="apidocSignatureSpan">ember-cp-validations.index.</span>setupPreprocessorRegistry
+            <span class="apidocSignatureSpan">(type, registry)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cp-validations.index.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cp-validations.v_get">module ember-cp-validations.v_get</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.v_get">
+            function <span class="apidocSignatureSpan">ember-cp-validations.</span>v_get
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cp-validations.v_get.prototype">module ember-cp-validations.v_get.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.processNode">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNode
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeAttributes">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeAttributes
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeHash">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeHash
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeParams">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeParams
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.transform">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>transform
+            <span class="apidocSignatureSpan">(ast)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.transformToGet">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>transformToGet
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cp-validations.v_get.prototype.validate">
+            function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>validate
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cp-validations" id="apidoc.module.ember-cp-validations">module ember-cp-validations</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.setupPreprocessorRegistry" id="apidoc.element.ember-cp-validations.setupPreprocessorRegistry">
+        function <span class="apidocSignatureSpan">ember-cp-validations.</span>setupPreprocessorRegistry
+        <span class="apidocSignatureSpan">(type, registry)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setupPreprocessorRegistry = function (type, registry) {
+  var VGet = require(&#x27;./htmlbars-plugins/v-get&#x27;);
+
+  registry.add(&#x27;htmlbars-ast-plugin&#x27;, {
+    name: &#x27;v-get&#x27;,
+    plugin: VGet,
+    baseDir: function() {
+      return __dirname;
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get" id="apidoc.element.ember-cp-validations.v_get">
+        function <span class="apidocSignatureSpan">ember-cp-validations.</span>v_get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function VGet(options) {
+  this.options = options;
+  this.syntax = null; // set by HTMLBars
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cp-validations.index" id="apidoc.module.ember-cp-validations.index">module ember-cp-validations.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.index.setupPreprocessorRegistry" id="apidoc.element.ember-cp-validations.index.setupPreprocessorRegistry">
+        function <span class="apidocSignatureSpan">ember-cp-validations.index.</span>setupPreprocessorRegistry
+        <span class="apidocSignatureSpan">(type, registry)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setupPreprocessorRegistry = function (type, registry) {
+  var VGet = require(&#x27;./htmlbars-plugins/v-get&#x27;);
+
+  registry.add(&#x27;htmlbars-ast-plugin&#x27;, {
+    name: &#x27;v-get&#x27;,
+    plugin: VGet,
+    baseDir: function() {
+      return __dirname;
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cp-validations.v_get" id="apidoc.module.ember-cp-validations.v_get">module ember-cp-validations.v_get</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.v_get" id="apidoc.element.ember-cp-validations.v_get.v_get">
+        function <span class="apidocSignatureSpan">ember-cp-validations.</span>v_get
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function VGet(options) {
+  this.options = options;
+  this.syntax = null; // set by HTMLBars
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cp-validations.v_get.prototype" id="apidoc.module.ember-cp-validations.v_get.prototype">module ember-cp-validations.v_get.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.processNode" id="apidoc.element.ember-cp-validations.v_get.prototype.processNode">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNode
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processNode = function (node) {
+  var type = node.type;
+  node = unwrapNode(node);
+
+  // {{v-get model &#x27;username&#x27; &#x27;isValid&#x27;}}
+  if (type === &#x27;MustacheStatement&#x27; &#x26;&#x26; node.path.original === &#x27;v-get&#x27;) {
+    this.transformToGet(node);
+  }
+
+  this.processNodeParams(node);
+  this.processNodeHash(node);
+  this.processNodeAttributes(node);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+VGet.prototype.transform = function(ast) {
+  var context = this;
+  var walker = new this.syntax.Walker();
+
+  walker.visit(ast, function(node) {
+    if (context.validate(node)) {
+      context.<span class="apidocCodeKeywordSpan">processNode</span>(node);
+    }
+  });
+
+  return ast;
+};
+
+VGet.prototype.validate = function(node) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeAttributes" id="apidoc.element.ember-cp-validations.v_get.prototype.processNodeAttributes">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeAttributes
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processNodeAttributes = function (node) {
+  var i;
+  if (node.attributes) {
+    for (i = 0; i &#x3c; node.attributes.length; i++) {
+      var attr = node.attributes[i];
+      this.processNode(attr.value);
+    }
+  }
+
+  if (node.parts) {
+    for (i = 0; i &#x3c; node.parts.length; i++) {
+      this.processNode(node.parts[i]);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // {{v-get model &#x27;username&#x27; &#x27;isValid&#x27;}}
+  if (type === &#x27;MustacheStatement&#x27; &#x26;&#x26; node.path.original === &#x27;v-get&#x27;) {
+    this.transformToGet(node);
+  }
+
+  this.processNodeParams(node);
+  this.processNodeHash(node);
+  this.<span class="apidocCodeKeywordSpan">processNodeAttributes</span>(node);
+};
+
+/**
+ * {{#if (v-get model &#x27;username&#x27; &#x27;isValid&#x27;)}} {{/if}}
+ * @param  {AST.Node} node
+ */
+VGet.prototype.processNodeParams = function(node) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeHash" id="apidoc.element.ember-cp-validations.v_get.prototype.processNodeHash">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeHash
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processNodeHash = function (node) {
+  if (node.hash &#x26;&#x26; node.hash.pairs) {
+    for (var i = 0; i &#x3c; node.hash.pairs.length; i++) {
+      var pair = node.hash.pairs[i];
+      if (pair.value.type === &#x27;SubExpression&#x27;) {
+        if (pair.value.path.original === &#x27;v-get&#x27;) {
+          this.transformToGet(pair.value);
+        } else {
+          this.processNode(pair.value);
+        }
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+ // {{v-get model &#x27;username&#x27; &#x27;isValid&#x27;}}
+ if (type === &#x27;MustacheStatement&#x27; &#x26;&#x26; node.path.original === &#x27;v-get&#x27;) {
+   this.transformToGet(node);
+ }
+
+ this.processNodeParams(node);
+ this.<span class="apidocCodeKeywordSpan">processNodeHash</span>(node);
+ this.processNodeAttributes(node);
+};
+
+/**
+* {{#if (v-get model &#x27;username&#x27; &#x27;isValid&#x27;)}} {{/if}}
+* @param  {AST.Node} node
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.processNodeParams" id="apidoc.element.ember-cp-validations.v_get.prototype.processNodeParams">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>processNodeParams
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processNodeParams = function (node) {
+  if (node.params) {
+    for (var i = 0; i &#x3c; node.params.length; i++) {
+      var param = node.params[i];
+      if (param.type === &#x27;SubExpression&#x27;) {
+        if (param.path.original === &#x27;v-get&#x27;) {
+          this.transformToGet(param);
+        } else {
+          this.processNode(param);
+        }
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ node = unwrapNode(node);
+
+ // {{v-get model &#x27;username&#x27; &#x27;isValid&#x27;}}
+ if (type === &#x27;MustacheStatement&#x27; &#x26;&#x26; node.path.original === &#x27;v-get&#x27;) {
+   this.transformToGet(node);
+ }
+
+ this.<span class="apidocCodeKeywordSpan">processNodeParams</span>(node);
+ this.processNodeHash(node);
+ this.processNodeAttributes(node);
+};
+
+/**
+* {{#if (v-get model &#x27;username&#x27; &#x27;isValid&#x27;)}} {{/if}}
+* @param  {AST.Node} node
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.transform" id="apidoc.element.ember-cp-validations.v_get.prototype.transform">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>transform
+        <span class="apidocSignatureSpan">(ast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transform = function (ast) {
+  var context = this;
+  var walker = new this.syntax.Walker();
+
+  walker.visit(ast, function(node) {
+    if (context.validate(node)) {
+      context.processNode(node);
+    }
+  });
+
+  return ast;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.transformToGet" id="apidoc.element.ember-cp-validations.v_get.prototype.transformToGet">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>transformToGet
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">transformToGet = function (node) {
+  node = unwrapNode(node);
+  var params = node.params;
+  var i = 0;
+
+  if (params.length &#x3c; 2) {
+    throw new Error(&#x27;{{v-get}} requires at least two arguments&#x27;);
+  }
+  if (params[0].type !== &#x27;PathExpression&#x27;) {
+    throw new Error(&#x27;The first argument to {{v-get}} must be a stream&#x27;);
+  }
+
+  var root = this.syntax.builders.path(params[i++].original + &#x27;.validations&#x27;);
+
+  if (params.length === 3) {
+    root = this.syntax.builders.path(root.original + &#x27;.attrs&#x27;);
+    root = this.syntax.builders.sexpr(this.syntax.builders.path(&#x27;get&#x27;), [root, params[i++]]); // (get model.validations.attrs &#x27;username
+&#x27;)
+  }
+
+  node.path = this.syntax.builders.path(&#x27;get&#x27;);
+  node.params = [root, params[i]];
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+VGet.prototype.processNode = function(node) {
+  var type = node.type;
+  node = unwrapNode(node);
+
+  // {{v-get model &#x27;username&#x27; &#x27;isValid&#x27;}}
+  if (type === &#x27;MustacheStatement&#x27; &#x26;&#x26; node.path.original === &#x27;v-get&#x27;) {
+    this.<span class="apidocCodeKeywordSpan">transformToGet</span>(node);
+  }
+
+  this.processNodeParams(node);
+  this.processNodeHash(node);
+  this.processNodeAttributes(node);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cp-validations.v_get.prototype.validate" id="apidoc.element.ember-cp-validations.v_get.prototype.validate">
+        function <span class="apidocSignatureSpan">ember-cp-validations.v_get.prototype.</span>validate
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validate = function (node) {
+  return [&#x27;BlockStatement&#x27;, &#x27;MustacheStatement&#x27;, &#x27;ElementNode&#x27;].indexOf(node.type) &#x3e; -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+VGet.prototype.transform = function(ast) {
+  var context = this;
+  var walker = new this.syntax.Walker();
+
+  walker.visit(ast, function(node) {
+    if (context.<span class="apidocCodeKeywordSpan">validate</span>(node)) {
+      context.processNode(node);
+    }
+  });
+
+  return ast;
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
